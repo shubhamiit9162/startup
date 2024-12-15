@@ -1,0 +1,172 @@
+/* About Us Container */
+.about-us-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  color: #333;
+}
+
+/* About Us Header */
+.about-us-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-us-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.about-us-header p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Mission Section */
+.about-us-mission {
+  background-color: #ffffff;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-mission h2 {
+  font-size: 2.5rem;
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+.about-us-mission p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #34495e;
+}
+
+/* Team Section */
+.about-us-team {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-us-team h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Contact Section */
+.about-us-contact {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-contact h2 {
+  font-size: 2.5rem;
+  color: #2980b9;
+  margin-bottom: 20px;
+}
+
+.about-us-contact p {
+  font-size: 1.1rem;
+  color: #34495e;
+  line-height: 1.8;
+}
+
+.about-us-contact a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.about-us-contact a:hover {
+  color: #1abc9c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-us-header p {
+    font-size: 1rem;
+  }
+
+  .about-us-mission,
+  .about-us-contact {
+    padding: 30px;
+  }
+
+  .team-member {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-us-header p {
+    font-size: 0.9rem;
+  }
+
+  .team-members {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+}

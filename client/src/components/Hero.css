@@ -1,0 +1,134 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;
+  height: 100vh;
+  background: url('https://example.com/hero-image.jpg') center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* "Breathe Fresh Air" Heading */
+.hero h1 {
+  position: absolute;
+  top: 30px; /* Top-left positioning */
+  left: 23px;
+  font-size: 4rem; /* Double the size of "Clean-Air" logo */
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+  animation: fadeInUp 1.5s ease-out forwards;
+  margin: 0;
+}
+
+/* Animation for the Heading */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* "Shop Now" Button */
+.hero .btn {
+  position: absolute;
+  top: 8px; /* Positioned at the top-middle */
+  left: 41%;
+  transform: translateX(-40%);
+  font-size: 0.2rem; /* Smaller than its original size */
+  padding: 8px 8px; /* Reduced padding for a smaller button */
+  background-color: #b1bec8;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(33, 34, 35, 0.867);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+
+
+
+.hero .btn:hover {
+  background-color: #87b2ce;
+  box-shadow: 0 8px 20px rgba(112, 185, 233, 0.4);
+  transform: translate(-40%, -2px); /* Adjust hover effect for middle positioning */
+}
+
+.hero .btn:focus {
+  outline: none;
+}
+
+/* "Learn More" Button */
+.hero .learn-more {
+  left: 50%; /* Position "Learn More" next to "Shop Now" */
+  transform: translateX(-50%); /* Center the button */
+  font-size: 0.2rem; /* Same size as "Shop Now" button */
+  padding: 8px 8px; /* Same padding as "Shop Now" */
+  background-color: #041123; /* Slightly different color for distinction */
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(33, 34, 35, 0.867);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+/* Hover effect for "Learn More" Button */
+.hero .learn-more:hover {
+  background-color: #04111e;
+  box-shadow: 0 8px 20px rgba(85, 115, 159, 0.4);
+  transform: translateX(-40%) translateY(-2px); /* Same hover effect as "Shop Now" */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem; /* Adjust for smaller screens */
+  }
+
+  .hero .btn {
+    font-size: 0.8rem; /* Reduce button size for smaller screens */
+    padding: 6px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem; /* Further adjust for very small screens */
+  }
+
+  .hero .btn {
+    font-size: 0.3rem; /* Further reduce button size */
+    padding: 5px 5px;
+  }
+}
+
+/* Optional Overlay */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 0;
+}
+
+.hero > * {
+  z-index: 1; /* Ensure text and button appear above the overlay */
+}

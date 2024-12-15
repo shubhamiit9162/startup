@@ -1,0 +1,129 @@
+/* General Container Styling */
+.contact-us-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .contact-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .contact-header h1 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-section {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  .faq-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .faq-list li {
+    margin-bottom: 15px;
+  }
+  
+  .faq-list h4 {
+    margin: 5px 0;
+    color: #007185;
+  }
+  
+  .faq-list p {
+    margin: 0;
+  }
+  
+  /* Contact Options */
+  .contact-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .contact-option {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 20px;
+    width: 28%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-option h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-option a {
+    color: #007185;
+    text-decoration: none;
+  }
+  
+  .contact-option a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    background-color: #007185;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #005e6e;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .contact-options {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .contact-option {
+      width: 100%;
+    }
+  }
+  
