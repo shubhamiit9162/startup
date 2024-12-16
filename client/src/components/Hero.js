@@ -4,13 +4,8 @@ import './Hero.css';
 
 const Hero = () => {
   const navigate = useNavigate();
-  const token = localStorage.getItem('authToken'); 
 
-  const handleLogout = () => {
-    localStorage.removeItem('authToken'); 
-    navigate('/login'); 
-  };
-
+  
   return (
     <section className="hero">
       {/* Top-left title */}
