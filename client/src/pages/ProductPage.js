@@ -16,7 +16,7 @@ const ProductPage = () => {
       navigate('/login');  
     }    
     axios
-      .get('http://localhost:5000/api/products', {
+      .get('https://startup-clean-air.onrender.com/api/products', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
